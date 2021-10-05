@@ -1,9 +1,9 @@
 ﻿using System;
 namespace LeetCode
 {
-    public class Implement_strStr
+    public class Easy_Implement_strStr
     {
-        public Implement_strStr() { }
+        public Easy_Implement_strStr() { }
 
         public int StrStr(string haystack, string needle)
         {
