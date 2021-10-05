@@ -1,9 +1,9 @@
 ﻿using System;
 namespace LeetCode
 {
-    public class NumberToZeroOfSteps
+    public class Easy_NumberToZeroOfSteps
     {
-        public NumberToZeroOfSteps() { }
+        public Easy_NumberToZeroOfSteps() { }
 
         public int NumberOfSteps(int num)
         {
