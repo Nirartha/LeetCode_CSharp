@@ -6,6 +6,30 @@ namespace LeetCodePractice
 {
     class LongestSubstringWithoutRepeatingCharacters
     {
+        /** Solution I 
+            Runtime 4ms, Beats 94.39%
+            Memory 44.46MB, Beats 33.70%
+        */
+        public int LengthOfLongestSubstring(string s) {
+        Dictionary<char, int> dicCount = new Dictionary<char, int>();
+        int start = 0;
+        int maxLength = 0;
+
+            for (int i = 0; i < s.Length; i++) {
+                char ch = s[i];
+                if (dicCount.ContainsKey(ch) && dicCount[ch] >= start) start = dicCount[ch] + 1;
+                
+                dicCount[ch] = i;
+                maxLength = Math.Max(maxLength, i - start + 1);
+            }
+    
+            return maxLength;
+        }
+
+        /** Solution II 
+            Runtime 738ms, Beats5.03%
+            Memory 35.53MB, Beats 100.00%
+        */
         public int LengthOfLongestSubstring(string s)
         {
             if (s.Length == 0) return 0;
