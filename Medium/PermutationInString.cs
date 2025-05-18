@@ -2,8 +2,7 @@ using System;
 namespace LeetCode
 {
     public class Solution {
-
-      /**
+      /** Solution I
         Runtime 9ms, Beats 46.49%
         Memory 43.24MB, Beats 78.76%
       */
